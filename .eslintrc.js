@@ -15,7 +15,8 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'max-len': 'off',
     'semi': 'off',
-    'no-unused-vars': 'warn'
+    'no-unused-vars': 'warn',
+    "import/no-extraneous-dependencies": 'off'
   },
   overrides: [
     {
