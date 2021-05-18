@@ -23,6 +23,7 @@ export default createStore({
         payload.email, payload.password,
       );
 
+      // `set` allow to create doc with uid. `add` does not
       await usersCollection.doc(userCred.user.uid).set({
         name: payload.name,
         email: payload.email,
