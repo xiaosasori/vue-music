@@ -1,5 +1,5 @@
 import SongItem from '@/components/SongItem.vue';
-import { mount, shallowMount, RouterLinkStub } from '@vue/test-utils';
+import { shallowMount, RouterLinkStub } from '@vue/test-utils';
 
 describe('SongItem.vue', () => {
   test('render song.display_name', () => {
