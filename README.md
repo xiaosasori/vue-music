@@ -7,7 +7,8 @@
 - [x] Canceling upload if navigating to another route
 - [x] Deleting audio file
 - [x] Playing music with Howler.js
-- 
+- [x] i18n with pluralization, number format, toggle locale, component [interpolation](https://kazupon.github.io/vue-i18n/guide/interpolation.html#basic-usage)
+
 ## Project setup
 ```
 npm install

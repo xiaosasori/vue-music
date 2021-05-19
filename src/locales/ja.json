@@ -1,0 +1,15 @@
+{
+    "home": {
+      "listen": "音楽を聞きましょう!"
+    },
+    "manage": {
+      "my_songs": "閲覧"
+    },
+    "register": {
+      "TOS": "",
+      "accept": ""
+    },
+    "song": {
+      "comment_count": ""
+    }
+  }
