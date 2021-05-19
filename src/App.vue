@@ -1,7 +1,11 @@
 <template>
   <app-header />
 
-  <router-view />
+  <router-view v-slot="{ Component }">
+    <transition name="fade" mode="out-in">
+      <component :is="Component"></component>
+    </transition>
+  </router-view>
 
   <!-- Player -->
   <div class="fixed bottom-0 left-0 w-full h-16 p-5 pb-4 text-left align-top bg-white">
@@ -41,12 +45,13 @@
       </div>
     </div>
   </div>
-
+  <app-player />
   <auth-modal />
 
 </template>
 
 <script>
+import AppPlayer from '@/components/Player.vue';
 import AppHeader from './components/Header.vue';
 import AuthModal from './components/Auth.vue';
 
@@ -55,9 +60,25 @@ export default {
   components: {
     AppHeader,
     AuthModal,
+    AppPlayer,
   },
   created() {
     this.$store.dispatch('init_login');
   },
 };
 </script>
+
+<style>
+.fade-enter-from {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  transition: all 0.25s ease-out;
+}
+
+.fade-leave-to {
+  transition: all 0.25s ease-out;
+  opacity: 0;
+}
+</style>
