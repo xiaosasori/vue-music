@@ -1,5 +1,13 @@
 # vue-music
 
+- [x] Create account with firebase
+- [x] Form validation with Vee-Validate
+- [x] Upload audio file to firebase storage
+- [x] Sync uploaded file with firestore
+- [x] Canceling upload if navigating to another route
+- [x] Deleting audio file
+- [x] Playing music with Howler.js
+- 
 ## Project setup
 ```
 npm install
