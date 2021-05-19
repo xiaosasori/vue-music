@@ -9,6 +9,8 @@
 - [x] Playing music with Howler.js
 - [x] i18n with pluralization, number format, toggle locale, component [interpolation](https://kazupon.github.io/vue-i18n/guide/interpolation.html#basic-usage)
 
+## Notes
+- `shallowMount` doesn't render child components
 ## Project setup
 ```
 npm install
