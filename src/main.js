@@ -8,6 +8,11 @@ import './assets/tailwind.css';
 import './assets/main.css';
 import i18n from './i18n'
 import './registerServiceWorker'
+import GlobalComponents from './includes/_global';
+import ProgessBar from './includes/progress-bar';
+import 'nprogress/nprogress.css';
+
+ProgessBar(router);
 
 let app;
 
@@ -19,6 +24,7 @@ auth.onAuthStateChanged(() => {
     app.use(store);
     app.use(router);
     app.use(VeeValidatePlugin);
+    app.use(GlobalComponents);
 
     app.mount('#app');
   }
